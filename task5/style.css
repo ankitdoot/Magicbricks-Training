@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #F7F5F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 10rem 10rem 0 10rem;
+    color: #F56D91;
+}
+.player-data{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 600;
+}
+.dicebtn{
+    margin-top: 8rem;
+    font-size: large;
+    font-weight: 600;
+    color: #F56D91;
+    border: 4px solid #8D8DAA;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+#diceres{
+    font-size: xx-large;
+    font-weight: 600;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+#dice2res{
+    margin-left: 3rem;
+}
+#winner{
+    text-align: center;
+    margin-top: 1rem;
+    color: #F56D91;
+    font-weight: 600;
+    font-size: large;
+}
+#playagain{
+    display: none;
+    margin-top: 2rem;
+    margin-left: 37.5rem;
+    font-size: large;
+    font-weight: 600;
+    color: #F56D91;
+    border: 4px solid #8D8DAA;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}

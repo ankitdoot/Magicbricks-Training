@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ping-Pong</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer type="module" src="./script.js"></script>
 </head>
 <body>
-    
-    <script defer src="./script.js"></script>
+    <div id="playbtn" class="playbtn">Play</div>
+    <div class="score">
+        <div id="player-score">0</div>
+        <div id="computer-score">0</div>
+    </div>
+    <div class="ball" id="ball"></div>
+    <div class="paddle left" id="player-paddle"></div>
+    <div class="paddle right" id="computer-paddle"></div>
+    <div class="game-over" id="gameover"></div>
+    <button onclick="window.location.reload()" class="play-again" id="playagain">Play Again</button>
 </body>
 </html>

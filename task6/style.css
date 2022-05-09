@@ -1,0 +1,25 @@
+.container{
+    float: right;
+    margin-right: 25rem;
+    margin-top: 15rem;
+    display: none;
+}
+.game-over{
+    font-size: x-large;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid #4E944F;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    background-color:   red;
+}
+.play-again{
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid #4E944F;
+    padding: 0.3rem;
+    border-radius: 2rem;
+    background-color: #E9EFC0;
+}

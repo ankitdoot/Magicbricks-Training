@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #dddddd;
+}
+
+body {
+  overflow: hidden;
+}
+.paddle {
+  --position: 50;
+  position: absolute;
+  background-color: #06113c;
+  top: calc(var(--position) * 1vh);
+  transform: translateY(-50%);
+  width: 1vh;
+  height: 10vh;
+}
+
+.paddle.left {
+  left: 0.5vw;
+}
+
+.paddle.right {
+  right: 0.5vw;
+}
+
+.ball {
+  --x: 50;
+  --y: 50;
+
+  position: absolute;
+  background-color: #06113c;
+  left: calc(var(--x) * 1vw);
+  top: calc(var(--y) * 1vh);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5vh;
+  height: 2.5vh;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 7vh;
+  color: #06113c;
+}
+
+.score > * {
+  flex-grow: 1; /*every child will set to an equal size inside the container.*/
+  flex-basis: 0; /*initial size of flex item*/
+  padding: 0 2vh;
+  margin: 1vh 0;
+  opacity: 0.5;
+}
+
+.score > :first-child {
+  text-align: right;
+  border-right: 0.5vh solid #06113c;
+}
+.playbtn {
+  position: relative;
+  font-size: x-large;
+  border: 5px solid black;
+  top: -10rem;
+}
+.game-over {
+  visibility: hidden;
+  text-align: center;
+  margin-left: 34rem;
+  margin-top: 5rem;
+  width: 12rem;
+  font-size: xx-large;
+  border: 5px solid black;
+  border-radius: 1rem;
+  background-color: red;
+}
+.play-again {
+  display: none;
+  text-align: center;
+  margin-left: 34rem;
+  margin-top: 2rem;
+  width: 13rem;
+  font-size: xx-large;
+  border: 5px solid black;
+  border-radius: 1rem;
+  background-color: greenyellow;
+}
